@@ -15,14 +15,15 @@ function roll2() {
 
 //user interface
 $(document).ready(function (event) {
-    //event.preventDefault();
     $("#roll1").click(function () {
         roll1();
-        alert(randomNumber)
+        //alert(randomNumber)
+        $("#dicescore1").append(randomNumber);
     });
     $("#rolldice2").click(function (){
         roll2();
-        alert(randomNumber2)
+        //alert(randomNumber2)
+        $("#dicescore2").append(randomNumber2);
     });
     //print dice roll to dice score
 
