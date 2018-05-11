@@ -18,7 +18,8 @@ function testdice(){
         
     }
     else{
-        totalscore1=0;  
+        totalscore1=0; 
+        alert("You Rolled a 1!");   
     }
 };
 function testdice2(){
@@ -27,9 +28,16 @@ function testdice2(){
         
     }
     else{
-        totalscore2=0;  
+        totalscore2=0;
+        alert("You Rolled a 1!");  
     }
 };
+// function winnerTest(){
+//     if (totalscore1=>parse)
+// }
+function switcher(){
+
+}
 
 
 
