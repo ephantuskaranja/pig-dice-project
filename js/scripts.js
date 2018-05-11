@@ -21,7 +21,7 @@ $(document).ready(function (event) {
         roll1();
         //alert(randomNumber)
         $(".dicescore1").text(randomNumber);
-        totalscore1=totalscore1 + randomNumber;
+        totalscore1 +=randomNumber;
         //alert(totalscore1);
         $(".currentscore1").text(totalscore1);
 
@@ -30,6 +30,8 @@ $(document).ready(function (event) {
         roll2();
         //alert(randomNumber2)
         $(".dicescore2").text(randomNumber2);
+        totalscore2 +=randomNumber2;
+        $(".currentscore2").text(totalscore2);
     });
     //print dice roll to dice score
 
