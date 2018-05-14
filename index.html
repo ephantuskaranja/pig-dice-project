@@ -18,13 +18,22 @@
             <ol>
                 <li>The aim of every player is to ganner as much points as possible.</li>
                 <li><em>Exception:</em>If a player rolls a 1, the player's turn is over and any points <br> have accumulated during this turn are forfeited.</li>
-                <li>If a player chooses to hold,the players current total is increased by 2 and forfeits the<br> chance to roll the dice</li>
+                <li>Each player rolls the dice once then hands over to the other</li>
             </ol>
+        </div>
+        <div class="rowplayer">
+            <form>
+            <label for="player1name">Enter Player1 name:</label>
+            <input type="text" id="player1name">
+            <label for="player2name">Enter Player2 name:</label>
+            <input type="text" id="player2name">
+            <button type="button" id="submit">submit</button>
+        </form>
         </div>
         <div class="row">
             <div class="col-md-5">
                 <!--player 1-->
-                <h1>PLAYER 1</h1>
+                <span class="player1"></span>
                 <div>
                     <!--roll dice/hold-->
                     <div>
@@ -49,7 +58,7 @@
                 </div>
             </div>
             <div class="col-md-5">
-                <h1>PLAYER 2</h1>
+                    <span class="player2"></span>
                 <div>
                     <!--roll dice/hold-->
                     <div>

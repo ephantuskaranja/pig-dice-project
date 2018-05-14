@@ -43,6 +43,14 @@ function switcher(){
 
 //user interface
 $(document).ready(function (event) {
+    $("#submit").click(function(){
+        
+        var inputtedPlayer1Name = $("input#player1name").val();
+        var inputtedPlayer2Name = $("input#player2name").val();
+        $(".player1").text(inputtedPlayer1Name);
+        $(".player2").text(inputtedPlayer2Name);
+
+    });
     $("#roll1").click(function () {
         roll1();
         $(".dicescore1").text(randomNumber);
