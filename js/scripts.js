@@ -49,16 +49,17 @@ $(document).ready(function (event) {
         var inputtedPlayer2Name = $("input#player2name").val();
         $(".player1").append("player1:" + inputtedPlayer1Name);
         $(".player2").append("player2:" + inputtedPlayer2Name);
-        $(".rowplayer").hide();
+        $(".setscore").show();
 
     });
     $("#setscore").click(function () {
         inputtedwinnerscore = $("input#winner").val();
-        //alert(inputtedwinnerscore);
+        $(".setscore").hide();
     });
 
     $("#roll1").click(function () {
         roll1();
+        $(".results").show();
         $(".dicescore1").text(randomNumber);
         testdice();
         $(".currentscore1").text(totalscore1);

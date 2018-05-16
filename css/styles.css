@@ -1,0 +1,19 @@
+.jumbotron{
+    text-align: center;
+    color: coral;
+    background-color: teal;
+}
+.well {
+    color: coral;
+    background-color: teal;
+}
+#submit {
+    color: white;
+    background-color: teal;
+    padding: 0%;
+
+}
+.gamerules{
+    color: white;
+    background-color: teal;
+}
