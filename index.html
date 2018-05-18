@@ -12,19 +12,8 @@
 
 <body>
     <div class="container">
-        <h1 class="row jumbotron">PIG DICE</h1>
-        <div class="row">
-            <H1 class="well">Game Rules:</H1> <div class="gamerules">
-            <ol>
-                <li>The aim of every player is to gain as much points as possible.</li>
-                <li>
-                    <em>Exception:</em>If a player rolls a 1, the player's turn is over and any points
-                    <br> have accumulated during this turn are forfeited.</li>
-                <li>Each player rolls the dice once then hands over to the other</li>
-                <Li>The winner score is set at every start of a game</Li>
-            </ol></div>
-        </div>
-        <div class="rowplayer">
+        <h1 class="row jumbotron" id="pig">PIG DICE</h1>
+        <div class="rowplayer well" id="rowplayer">
             <form>
                 <label for="player1name">Enter Player1 name:</label>
                 <input type="text" id="player1name">
@@ -33,67 +22,49 @@
                 <button type="button" id="submit">submit</button>
             </form>
         </div>
-        <div class="row">
-            <div class="game">
-                <div class="col-md-5">
-                    <!--player 1-->
-                    <span class="player1"></span>
-                    <div>
-                        <!--roll dice/hold-->
-                        <div>
-                            <button type="button" id="roll1">Roll Dice</button>
-                        </div>
-                    </div>
-                    <div class="results">
-                        <div>
-                            <p>Your Rolled dice is:
-                                <span class="dicescore1"></span>
-                            </p>
-                        </div>
-                        <div>
-                            <label for="current score">Current Score</label>
-                            <p>Current dice score:
-                                <span class="currentscore1"></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <div class="row jumbotron" id="pl">
+            <div class="col-md-6">
+                <span class="player1" id="p1"></span>
             </div>
-            <div class="col-md-2">
-                <div class="setscore">
-                    <label for="winner">Enter Winner Score</label>
-                    <input type="number" id="winner">
-                    <button type="button" id="setscore">Set Score</button>
-                </div>
-                <div>
-                    <button type="button" id="newgame">New Game</button>
-                </div>
-            </div>
-            <div class="col-md-5">
-                    <span class="player2"></span>
-                    <div id="player2">
-                        <div>
-                            <button type="button" id="rolldice2">Roll Dice</button>
-                        </div>
-                        <div>
-                        </div>
-                        <!--player 2-->
-                        <div class="results">
-                            <div>
-                                <p>Your Rolled dice is:
-                                    <span class="dicescore2"></span>
-                                </p>
-                            </div>
-                            <div>
-                                <label for="current score">Current Score 1:</label>
-                                <p>Current dice score:
-                                    <span class="currentscore2"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-md-6">
+                <span class="player2" id="p2"></span>
             </div>
         </div>
+        <div class="row" id="ress">
+            <div class="col-md-4">
+                <button type="button" id="roll1">Roll Dice</button>
+                <button type="button" id="hold1">Hold</button>
+                <p>Your Rolled dice is:
+                    <span class="dicescore1"></span>
+                </p>
+                <label for="current score">Current Score:</label>
+                <span class="currentscore1"></span>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <button type="button" id="newgame">New Game</button>
+            </div>
+            <div class="col-md-4">
+                <button type="button" id="rolldice2">Roll Dice</button>
+                <button type="button" id="hold2">Hold</button>
+                <p>Your Rolled dice is:
+                    <span class="dicescore2"></span>
+                </p>
+                <div>
+                    <label for="current score">Current Score:</label>
+                    <span class="currentscore2"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="setscore well" id="sets">
+                <label for="winner">Enter Winner Score</label>
+                <input type="number" id="winner">
+                <button type="button" id="setscore">Set Score</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

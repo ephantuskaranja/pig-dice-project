@@ -41,7 +41,6 @@ function winnerTester() {
     }
 };
 
-
 //user interface
 $(document).ready(function (event) {
     $("#submit").click(function () {
@@ -59,7 +58,7 @@ $(document).ready(function (event) {
 
     $("#roll1").click(function () {
         roll1();
-        $(".results").show();
+        // $(".results").show();
         $(".dicescore1").text(randomNumber);
         testdice();
         $(".currentscore1").text(totalscore1);
@@ -76,7 +75,12 @@ $(document).ready(function (event) {
     $("#newgame").click(function () {
         location.reload();
     });
-
+    $("#hold1").click(function(){
+        alert("Turn for player 2");
+    });
+    $("#hold2").click(function(){
+        alert("Turn for player 1");
+    });
 });
 
 

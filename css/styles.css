@@ -1,19 +1,51 @@
 .jumbotron{
-    text-align: center;
-    color: coral;
-    background-color: teal;
+    text-align: center;     
 }
-.well {
-    color: coral;
+#ress {
+    color: blue;
+    font-weight: bold;
+}
+#sets {
+    text-align: center;
     background-color: teal;
+    color: black;
+    font-weight: bold;
+}
+#pig{
+    color: blue;
+    background: rgba(200, 54, 54, 0.0);
+}
+#hrule {
+    color: blue;
+    background: rgba(200, 54, 54, 0.0);
 }
 #submit {
     color: white;
     background-color: teal;
-    padding: 0%;
+    border-radius: 15px;
+    border: 0px;
+    font-weight: bold;
+}
 
-}
 .gamerules{
-    color: white;
-    background-color: teal;
+    color: coral;
+    background: teal;
 }
+.container{
+    background-image: url("../images/dice1.png");
+    background-repeat: repeat;
+    background-size: 65vh;
+}
+#rowplayer {
+    background-color: teal;
+    color: black;
+    text-align: center;
+}
+#pl {
+    background-color: teal;
+    font-size: 5vh;
+}
+#p1, #p2{
+    color: white;   
+}
+
