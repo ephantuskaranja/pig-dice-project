@@ -20,7 +20,10 @@ function testdice() {
     else {
         totalscore1 = 0;
         alert("You Rolled a 1!");
+        $(".roller1").css("color", "");
         $(".roller2").css("color", "green");
+        $("#roll1").hide();
+        $("#rolldice2").show();
     }
 };
 function testdice2() {
@@ -31,7 +34,10 @@ function testdice2() {
     else {
         totalscore2 = 0;
         alert("You Rolled a 1!");
+        $(".roller2").css("color", "");
         $(".roller1").css("color", "green");
+        $("#rolldice2").hide();
+        $("#roll1").show();
     }
 };
 function winnerTester() {
@@ -45,17 +51,21 @@ function winnerTester() {
 
 //user interface
 $(document).ready(function (event) {
+    $(".roller1").hide();
+    $(".roller2").hide();
     $("#submit").click(function () {
         var inputtedPlayer1Name = $("input#player1name").val();
         var inputtedPlayer2Name = $("input#player2name").val();
-        $(".player1").append("player1:" + inputtedPlayer1Name);
-        $(".player2").append("player2:" + inputtedPlayer2Name);
-        $(".setscore").show();
+        $(".player1").append("PLAYER1:" + inputtedPlayer1Name);
+        $(".player2").append("PLAYER2:" + inputtedPlayer2Name);
+        $(".rowplayer").hide();
 
     });
     $("#setscore").click(function () {
         inputtedwinnerscore = $("input#winner").val();
-        $(".setscore").hide();
+        $(".setscore").show();
+        $(".roller1").show();
+        $(".roller2").show();
         $(".roller1").css("color", "green");
     });
 
@@ -80,11 +90,13 @@ $(document).ready(function (event) {
     });
     $("#hold1").click(function(){
         alert("Turn for player 2");
+        $("#rolldice2").show();
         $(".roller2").css("color", "green");
         $(".roller1").css("color", "");
     });
     $("#hold2").click(function(){
         alert("Turn for player 1");
+        $("#roll1").show();
         $(".roller1").css("color", "green");
         $(".roller2").css("color", "");
     });
