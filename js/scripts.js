@@ -20,6 +20,7 @@ function testdice() {
     else {
         totalscore1 = 0;
         alert("You Rolled a 1!");
+        $(".roller2").css("color", "green");
     }
 };
 function testdice2() {
@@ -30,14 +31,15 @@ function testdice2() {
     else {
         totalscore2 = 0;
         alert("You Rolled a 1!");
+        $(".roller1").css("color", "green");
     }
 };
 function winnerTester() {
     if (inputtedwinnerscore <= totalscore1) {
-        alert("Player1 wins");
+        alert(inputtedPlayer1Name + "wins");
     }
     else if (inputtedwinnerscore <= totalscore2) {
-        alert("Player2 wins");
+        alert(inputtedPlayer2Name + "wins!!");
     }
 };
 
@@ -54,6 +56,7 @@ $(document).ready(function (event) {
     $("#setscore").click(function () {
         inputtedwinnerscore = $("input#winner").val();
         $(".setscore").hide();
+        $(".roller1").css("color", "green");
     });
 
     $("#roll1").click(function () {
@@ -77,9 +80,13 @@ $(document).ready(function (event) {
     });
     $("#hold1").click(function(){
         alert("Turn for player 2");
+        $(".roller2").css("color", "green");
+        $(".roller1").css("color", "");
     });
     $("#hold2").click(function(){
         alert("Turn for player 1");
+        $(".roller1").css("color", "green");
+        $(".roller2").css("color", "");
     });
 });
 
