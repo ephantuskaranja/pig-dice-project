@@ -29,7 +29,6 @@
     border: 0px;
     font-weight: bold;
 }
-
 .gamerules{
     color: coral;
     background: teal;
@@ -54,5 +53,8 @@ body{
 #p1, #p2{
     color: blue; 
     font-weight: bold;  
+}
+#Grules{
+    color: blue;
 }
 
