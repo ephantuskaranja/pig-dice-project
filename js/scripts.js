@@ -42,10 +42,13 @@ function testdice2() {
 };
 function winnerTester() {
     if (inputtedwinnerscore <= totalscore1) {
-        alert(inputtedPlayer1Name + "wins");
+        alert("PLAYER1 wins!!");
+        location.reload();
+
     }
     else if (inputtedwinnerscore <= totalscore2) {
-        alert(inputtedPlayer2Name + "wins!!");
+        alert("PLAYER2 wins!!");
+        location.reload();
     }
 };
 
